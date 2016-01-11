@@ -139,7 +139,7 @@ $cmds = Array(
 		
 		return $out;
 	}),
-	PrepareCommand("self-destruct", "Deletes SPUD from the server but leaves the daemon running.", function($args) {
+	PrepareCommand("self-destruct", "Deletes SPUD from the server but leaves the daemon running. (Incomplete)", function($args) {
 		global $msgsock, $sdstr, $sdlen;
 		if (!is_resource($msgsock)) return "";
 		
